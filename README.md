@@ -1,7 +1,7 @@
 # Challenge
 Repositório criado, com o intituito de realizar a entrega do Sprint 4 do Challenge, matéria Responsive Web Development, instituição FIAP
 
-# Integrantes
+## Integrantes
 <ul>
   <li>Andrey Fernandez Garcia- rm87219</li>
   <li>Diego Augusto da Cruz- rm86877</li>
