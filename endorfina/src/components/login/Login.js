@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { AiOutlineArrowLeft, AiOutlineUser, AiFillLock } from "react-icons/ai";
 
 export const Terceiro = styled.div`
-   border: solid 1px;
+   border: solid 1px #0078b3;
    display: flex;
    flex-direction: column;
    width: 50vw;
@@ -30,5 +30,6 @@ export default function Login() {
           <div>
              <button type="submit">Entrar</button>
           </div>
+          <a><Link to="/cadastro">Cadastre-se</Link></a>
       </Terceiro>
 )}

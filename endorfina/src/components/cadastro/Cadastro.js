@@ -4,7 +4,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai"
 import styled from 'styled-components';
 
 export const Quarto = styled.section`
-   border: solid 1px;
+   border: solid 1px #0078b3;
    display: flex;
    flex-direction: column;
    width: 50vw;

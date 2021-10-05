@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import fundo3 from '../../img/fundo3.png'
 import hobbies from '../../img/hobbies.png'
@@ -87,7 +88,7 @@ export default function Hobbies() {
             </div>
 
             <div className= "btn">
-               <button className="participe">Participe</button>
+               <button className="participe"><Link to="/cadastro">Participe</Link></button>
             </div>
       </Segundo>
 )}
