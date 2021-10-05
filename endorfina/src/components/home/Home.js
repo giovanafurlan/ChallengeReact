@@ -21,10 +21,9 @@ export const Corpo = styled.section`
     }
 
     .texto .titulo{
-        padding: 2vh;
         text-transform: uppercase;
         text-align: center;
-        font-size: 50px;
+        font-size: 3vw;
         color: #0078b3;
         display: flex;
         flex-direction: column;
@@ -39,14 +38,6 @@ export const Corpo = styled.section`
     .texto p{
         text-align: justify;
         margin-top: 20px;
-    }
-
-    .texto .titulo{
-        padding: 2vh;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 50px;
-        color: #0078b3;
     }
 
     .texto img{
@@ -74,6 +65,7 @@ export const Corpo = styled.section`
         font-size: 1.2vw;
         padding: 5vh;
         height: 55vh;
+        margin-left: 4vw;
     }
 
     .box figure{

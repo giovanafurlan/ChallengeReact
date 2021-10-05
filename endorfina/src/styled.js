@@ -36,6 +36,13 @@ export const Topo = styled.header`
         text-align: center;
     }
 
+    .perfil{
+        text-align: center;
+        width: 8vw;
+        height: 3vh;
+        background-color: #b3e7ff;
+    }
+
     .cadastro {
         width: 8vw;
         height: 3vh;

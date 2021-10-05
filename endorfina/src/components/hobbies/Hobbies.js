@@ -45,7 +45,6 @@ export const Segundo = styled.section`
     .btn{
         display: flex;
         justify-content: center;
-        margin: 30px;
     }
 
     .participe {
@@ -60,6 +59,8 @@ export const Segundo = styled.section`
         transition: 1s all;
         cursor: pointer;
         text-align: center;
+        margin-bottom: 3vh;
+
     }
 
     .participe:hover {

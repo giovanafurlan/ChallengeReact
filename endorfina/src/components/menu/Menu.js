@@ -7,6 +7,7 @@ import Ansiedade from '../ansiedade/Ansiedade'
 import Hobbies from '../hobbies/Hobbies'
 import Cadastro from '../cadastro/Cadastro'
 import Login from '../login/Login'
+import Perfil from '../perfil/Perfil'
 
 export default function Menu() {
    return(
@@ -18,6 +19,7 @@ export default function Menu() {
                <li className="opcao"><Link to="/hobbies">Hobbies</Link></li>
                <li className="cadastro"><Link to="/login">Login</Link></li>
                <li className="cadastro"><Link to="/cadastro">Cadastro</Link></li>
+               <li className="perfil"><Link to="/perfil">Perfil</Link></li>
             </ul>
          </div>
 
@@ -28,6 +30,7 @@ export default function Menu() {
             <Route path="/hobbies" component={Hobbies}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/cadastro" component={Cadastro}></Route>
+            <Route path="/perfil" component={Perfil}></Route>
          </Switch>
       </Topo>
 )}
