@@ -12,30 +12,9 @@ export const Corpo = styled.section`
     .texto{
         width: 95vw;
         height: 50vh;
-        font-size: 1.2vw;
     }
 
-    .texto p{
-        text-align: justify;
-        margin-top: 20px;
-    }
-
-    .texto .titulo{
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 3vw;
-        color: #0078b3;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .texto{
-        width: 95vw;
-        height: 50vh;
-        font-size: 1.2vw;
-    }
-
-    .texto p{
+    p{
         text-align: justify;
         margin-top: 20px;
     }
@@ -53,12 +32,6 @@ export const Corpo = styled.section`
 
     .imagem img{
         width: 60vw;
-    }
-
-    .depoimentos{
-        text-align: center;
-        font-size: 30px;
-        color: #0078b3;
     }
 
     .box{
@@ -90,14 +63,14 @@ export default function Home() {
    return(
       <Corpo>
           <div className="texto">
-               <h2 className="titulo">Endorfina</h2>
+               <h1 className="titulo">Endorfina</h1>
                <p> <img src={fundo} align="left"/><br></br>
                A plaforma denominada Endorfina visa o controle da ansiedade por meio de prática de hobbies, a plataforma oferece uma série de opções que o usuário pode praticar, interação com usuários que praticam o mesmo, e acompanhamento com profissionais da área escolhida.<br></br>
                <br></br>A missão da plataforma é obter uma gama de opções de hobbies para enriquecer o projeto cada vez mais, a visão é fornecer um bom-estar ao usuário, um ambiente seguro, que seja uma válvula de escape de suas tensões que vem a ocasiaonar uma crise de ansiedade.
                </p>
             </div>
 
-            <h2 className="depoimentos">Depoimentos</h2>
+            <h3 className="depoimentos">Depoimentos</h3>
             <div className="box">
                <figure>
                   <img src= {user1}/>

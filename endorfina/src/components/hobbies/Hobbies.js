@@ -5,27 +5,10 @@ import fundo3 from '../../img/fundo3.png'
 import hobbies from '../../img/hobbies.png'
 
 export const Segundo = styled.section`
-    text-align: center;
-    font-size: 30px;
-
-    .texto h2{
-        padding: 2vh;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 30px;
-        color: #0078b3;
-    }
-
-    .texto{
-        width: 95vw;
-        height: 50vh;
-        font-size: 1.2vw;
-    }
+    align: center;
 
     .texto p{
-        color: black;
         text-align: justify;
-        margin-top: 20px;
     }
 
     .texto img{
@@ -40,7 +23,7 @@ export const Segundo = styled.section`
     }
 
     .imagem img{
-        width: 60vw;
+        width: 65vw;
     }
 
     .btn{

@@ -6,24 +6,8 @@ export const Primeiro = styled.section`
     text-align: center;
     font-size: 30px;
 
-    .texto h2{
-        padding: 2vh;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 30px;
-        color: #0078b3;
-    }
-
-    .texto{
-        width: 95vw;
-        height: 50vh;
-        font-size: 1.2vw;
-    }
-
     .texto p{
-        color: black;
         text-align: justify;
-        margin-top: 20px;
     }
 
     .texto img{

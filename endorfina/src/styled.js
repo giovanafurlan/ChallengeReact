@@ -1,7 +1,35 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
     font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #0078b3;
+        text-align: center;
+        margin: 2vh;
+    }
+
+    h2{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        color: #0078b3;
+        text-align: center;
+        margin: 5vh;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #0078b3;
+        text-align: center;
+        margin: 1vh;
+    }
+
+    p{
+        font-size: 1.2vw;
+    }
 `
 
 export const Topo = styled.header`
