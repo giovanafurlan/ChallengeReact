@@ -27,6 +27,16 @@ export const Container = styled.section`
         margin: 1vh;
     }
 
+    h4{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #0078b3;
+    }
+
+    h5{
+        font-size: 1rem;
+    }
+
     p{
         font-size: 1.2vw;
     }
