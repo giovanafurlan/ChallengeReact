@@ -8,6 +8,7 @@ import Hobbies from '../hobbies/Hobbies'
 import Cadastro from '../cadastro/Cadastro'
 import Login from '../login/Login'
 import Perfil from '../perfil/Perfil'
+import Perfil2 from '../perfil2/Perfil2'
 
 export default function Menu() {
    return(
@@ -31,6 +32,7 @@ export default function Menu() {
             <Route path="/login" component={Login}></Route>
             <Route path="/cadastro" component={Cadastro}></Route>
             <Route path="/perfil" component={Perfil}></Route>
+            <Route path="/perfil2" component={Perfil2}></Route>
          </Switch>
       </Topo>
 )}

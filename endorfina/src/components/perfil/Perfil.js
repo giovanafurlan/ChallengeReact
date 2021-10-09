@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 import user from '../../img/user1.png'
 import user2 from '../../img/user2.png'
 import user3 from '../../img/user3.png'
@@ -70,16 +71,16 @@ export default function Perfil() {
             <h3>Seus Hobbies</h3>
             <div className="hobbies">
                <figure>
+                  <figcaption className="hb"><Link to="/perfil2">Violão</Link></figcaption>
                   <img src={musica} alt="" className="hobby"/>
-                  <figcaption className="hb">Violão</figcaption>
                </figure>
                <figure>
-                  <img src={culinaria} alt="" className="hobby"/>
                   <figcaption className="hb">Culinária</figcaption>
+                  <img src={culinaria} alt="" className="hobby"/>
                </figure>
                <figure>
-                  <img src={meditacao} alt="" className="hobby"/>
                   <figcaption className="hb">Meditação</figcaption>
+                  <img src={meditacao} alt="" className="hobby"/>
                </figure>
             </div>
       </Quinto>
