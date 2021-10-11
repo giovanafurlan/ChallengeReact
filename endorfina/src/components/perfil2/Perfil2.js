@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Player } from 'video-react';
 import user from '../../img/user1.png'
 import user3 from '../../img/user3.png'
-import live from "../../img/live.jpg"
 
 export const Sexto = styled.div`
     @import "node_modules/video-react/dist/video-react.css";
