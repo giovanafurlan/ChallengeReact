@@ -4,68 +4,67 @@ import styled from 'styled-components';
 import { AiOutlineArrowLeft, AiOutlineUser, AiFillLock } from "react-icons/ai";
 
 export const Terceiro = styled.div`
+   border: solid 2px #0078b3;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 80vw;
+   margin: 5vw 10vw 10vw 10vw;
 
-border: solid 2px #0078b3;
+   .voltar{
+      font-weight: bold;
+      font-size: 16px;
+      float: left;
+   }
 
-.voltar{
-   position: absolute;
-   top: 100px;
-   font-weight: bold;
-   font-size: 16px;
-}
+   h2{
+      font-size: 25px;
+      color: #0078b3;
+   }
 
-h2{
-   font-size: 25px;
-   color: #0078b3;
-   text-align: center;
-}
+   .formulario{
+      width: 30vw;
+   }
 
-.formulario{
-   margin: 40px 0;
-}
+   label{
+      font-size: 18px;
+      margin: 0 0 3px;
+   }
 
-label{
-   display: block;
-   font-size: 18px;
-   margin: 0 0 3px;
-}
+   input{
+      margin: 20px 0 0;
+      padding: 10px 10px;
+      width: 20vw;
+   }
 
-input{
-   display: block;
-   margin: 20px 0 0;
-   padding: 10px 10px;
-   width: 50%; 
-}
+   input:hover{
+      background-color: #FFFAFA;
+   }
 
-input:hover{
-   background-color: #FFFAFA;
-}
+   .entrar {
+      width: 50px;
+      padding: 10px 0;
+      background: #0078b3;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 5px;
+      transition: 1s all;
+      cursor: pointer;
+      margin: 10px 0;
+   
+   }
 
-.entrar {
-   width: 200px;
-   padding: 15px 0;
-   background: #0078b3;
-   color: white;
-   font-weight: bold;
-   font-size: 18px;
-   border: none;
-   border-radius: 5px;
-   transition: 1s all;
-   cursor: pointer;
-   margin: 10px 0;
-  
-}
+   .entrar:hover {
+      background: #00BFFF;
+   }
 
-.entrar:hover {
-   background: #00BFFF;
-}
-
-.cadastro{
-   margin: 40px 0;
-   font-weight: bold;
-   font-size: 16px;
-}
-
+   .cadastro{
+      margin: 40px 0;
+      font-weight: bold;
+      font-size: 16px;
+   }
 `
 
 export default function Login() {

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none;
 
     h1{
         font-size: 3rem;
@@ -44,11 +45,7 @@ export const Container = styled.section`
 
 export const Topo = styled.header`
     background-color: #0078b3;
-    height: 6vh;
-
-    .menu{
-        color: white;
-    }
+    height: 5vh;
 
     ul{
         color: white;
@@ -58,32 +55,49 @@ export const Topo = styled.header`
         list-style-type: none;
     }
 
-    li{
+    li, a, .dropbtn{
+        color: white;
         text-decoration: none;
-        margin: 8px 0 5px 0;
-    }
-
-    .opcao:hover{
-        color: #f8f672;
-        text-decoration: underline;
-    }
-
-    .cadastro{
-        color: #0078b3;
+        margin: 1vh;
+        width: 10vw;
+        height: 3vh;
         background-color: white;
+        color: #39017e;
         text-align: center;
+        cursor: pointer;
     }
 
-    .perfil{
-        text-align: center;
-        width: 8vw;
-        height: 3vh;
-        background-color: #b3e7ff;
+    .dropbtn {
+    background-color: white;
+    color: #39017e;
+    font-size: 16px;
+    border: none;
     }
 
-    .cadastro {
-        width: 8vw;
-        height: 3vh;
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    }
+
+    .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    li:hover, a:hover, .dropbtn:hover{
+        background-color: #;a8e2ff
     }
 `
 

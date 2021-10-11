@@ -4,61 +4,67 @@ import { AiOutlineArrowLeft } from "react-icons/ai"
 import styled from 'styled-components';
 
 export const Quarto = styled.section`
-border: solid 2px #0078b3;
+   border: solid 2px #0078b3;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 80vw;
+   margin: 2vw 10vw 20vh 10vw;
 
-.voltar{
-   position: absolute;
-   top: 120px;
-   font-weight: bold;
-   font-size: 16px;
-}
+   .voltar{
+      font-weight: bold;
+      font-size: 16px;
+      float: left;
+   }
 
-h2{
-   font-size: 25px;
-   color: #0078b3;
-   text-align: center;
-}
+   h2{
+      font-size: 25px;
+      color: #0078b3;
+   }
 
-.formulario{
-   margin: 40px 0;
-}
+   .formulario{
+      width: 40vw;
+   }
 
-label{
-   display: block;
-   font-size: 18px;
-   margin: 0 0 3px;
-}
+   label{
+      font-size: 18px;
+      margin: 0 0 3px;
+   }
 
-input{
-   display: block;
-   margin: 20px 0 0;
-   padding: 10px 10px;
-   width: 50%; 
-}
+   input{
+      margin: 20px 0 0;
+      padding: 10px 10px;
+      width: 20vw;
+   }
 
-input:hover{
-   background-color: #FFFAFA;
-}
+   input:hover{
+      background-color: #FFFAFA;
+   }
 
-.entrar {
-   width: 200px;
-   padding: 15px 0;
-   background: #0078b3;
-   color: white;
-   font-weight: bold;
-   font-size: 18px;
-   border: none;
-   border-radius: 5px;
-   transition: 1s all;
-   cursor: pointer;
-   margin: 10px 0;
-  
-}
+   .entrar {
+      width: 80px;
+      padding: 10px 0;
+      background: #0078b3;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 5px;
+      transition: 1s all;
+      cursor: pointer;
+      margin: 10px 0;
+   
+   }
 
-.entrar:hover {
-   background: #00BFFF;
-}
+   .entrar:hover {
+      background: #00BFFF;
+   }
 
+   .cadastro{
+      margin: 40px 0;
+      font-weight: bold;
+      font-size: 16px;
+   }
 `
 
 export default function Cadastro() {

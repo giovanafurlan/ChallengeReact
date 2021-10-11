@@ -28,12 +28,14 @@ export const Quinto = styled.div`
    }
 
    h3{
-      margin: 5vh;
+      margin: 8vh;
    }
 
    .hobbies{
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
+      text-decoration: underline;
    }
 
    .hobby{
@@ -43,6 +45,7 @@ export const Quinto = styled.div`
 
    .hb{
       text-align: center;
+      font-size: 1.2rem;
    }
 `
 
