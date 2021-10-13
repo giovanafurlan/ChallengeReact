@@ -42,7 +42,7 @@ export const Terceiro = styled.div`
    }
 
    .entrar {
-      width: 50px;
+      width: 60px;
       padding: 10px 0;
       background: #0078b3;
       color: white;
@@ -82,7 +82,7 @@ export default function Login() {
             <input type="password" id="senha" required placeholder="Digite sua senha" />
          </div>
          <div>
-            <button className="entrar" type="submit">Entrar</button>
+            <button className="entrar" type="submit"><Link to="/perfil">Entrar</Link></button>
          </div>
          <a className="cadastro"><Link to="/cadastro">Cadastre-se</Link></a>
       </Terceiro>

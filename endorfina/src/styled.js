@@ -44,31 +44,32 @@ export const Container = styled.section`
 `
 
 export const Topo = styled.header`
-    background-color: #0078b3;
+    background-color: #009fec;
     height: 5vh;
 
     ul{
-        color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         list-style-type: none;
     }
 
+    .cadastro{
+        background-color: white;
+    }
+
     li, a, .dropbtn{
-        color: white;
         text-decoration: none;
         margin: 1vh;
         width: 10vw;
         height: 3vh;
-        background-color: white;
         color: #39017e;
         text-align: center;
         cursor: pointer;
     }
 
     .dropbtn {
-    background-color: white;
+    background-color: #dff4ff;
     color: #39017e;
     font-size: 16px;
     border: none;
@@ -97,24 +98,6 @@ export const Topo = styled.header`
     }
 
     li:hover, a:hover, .dropbtn:hover{
-        background-color: #;a8e2ff
-    }
-`
-
-export const Base = styled.footer`
-    display: flex;
-    flex-direction: row;
-
-    footer .copyright {
-        text-align: center;
-        color: #FFFFFF;
-        font-size: 18px;
-        margin-right: 10vw;
-    }
-
-    footer a{
-        font-size: 30px;
-        color: white;
-        margin: 0 10px 0 10px;
+        background-color: #a8e2ff
     }
 `

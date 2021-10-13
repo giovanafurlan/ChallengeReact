@@ -65,6 +65,10 @@ export const Quarto = styled.section`
       font-weight: bold;
       font-size: 16px;
    }
+
+   .botao{
+      margin: 3vh;
+   }
 `
 
 export default function Cadastro() {
@@ -81,9 +85,6 @@ export default function Cadastro() {
 
             <label for="email">E-mail:</label>
             <input type="email" id="email" required placeholder="Digite seu e-mail" /><br></br>
-            
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" placeholder="Digite sua senha" /><br></br>
 
             <label for="tel">Telefone:</label>
             <input type="tel" id="tel" placeholder="Digite seu telefone" /><br></br>
@@ -97,10 +98,13 @@ export default function Cadastro() {
             <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" placeholder="Digite sua cidade" /><br></br>
 
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" />
+
          </div>
 
-         <div>
-            <button className="entrar" type="submit">Cadastrar</button>
+         <div className="botao">
+            <button className="entrar" type="submit"><Link to="/login">Cadastrar</Link></button>
          </div>
       </Quarto>
    )

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Player } from 'video-react';
 import user from '../../img/user1.png'
 import user3 from '../../img/user3.png'
 
