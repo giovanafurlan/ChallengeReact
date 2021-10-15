@@ -74,13 +74,13 @@ export default function Login() {
             <a><Link to="/home"><AiOutlineArrowLeft />Voltar</Link></a>
          </div>
          <h2>Login</h2>
-         <div className="formulario">
+         <form className="formulario">
             <label for="email">E-mail:</label>
             <input type="email" id="email" required placeholder="Digite seu e-mail" /><br></br>
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" required placeholder="Digite sua senha" />
-         </div>
+         </form>
          <div>
             <button className="entrar" type="submit"><Link to="/perfil">Entrar</Link></button>
          </div>

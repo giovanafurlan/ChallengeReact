@@ -10,6 +10,8 @@ import Login from '../login/Login'
 import Perfil from '../perfil/Perfil'
 import Perfil2 from '../perfil2/Perfil2'
 import PerfilPro from '../perfilpro/PerfilPro'
+import FormUsuario from '../formusuario/FormUsuario'
+import ListaUsuario from '../listausuario/ListaUsuario'
 
 export default function Menu() {
    return(
@@ -27,6 +29,7 @@ export default function Menu() {
                   <a><Link to="/perfilpro">Profissional</Link></a>
                </div>
                </div>
+               <li className="cadastro"><Link to="/lista">Usuários</Link></li>
             </ul>
 
          <Switch>
@@ -39,6 +42,11 @@ export default function Menu() {
             <Route path="/perfil" component={Perfil}></Route>
             <Route path="/perfil2" component={Perfil2}></Route>
             <Route path="/perfilpro" component={PerfilPro}></Route>
+         </Switch>
+         <Switch>
+            <Route path="/lista" exact component={ListaUsuario}></Route>
+            <Route path="/inclui" component={FormUsuario}></Route>
+            <Route path="/edita/:codigo" component={FormUsuario}></Route>
          </Switch>
       </Topo>
 )}

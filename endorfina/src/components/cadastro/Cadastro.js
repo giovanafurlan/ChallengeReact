@@ -79,7 +79,7 @@ export default function Cadastro() {
          </div>
          <h2>Cadastro</h2>
 
-         <div className="formulario">
+         <form className="formulario">
             <label for="nome">Nome:</label>
             <input type="nome" id="nome" required placeholder="Digite seu nome" /><br></br>
 
@@ -100,8 +100,7 @@ export default function Cadastro() {
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" placeholder="Digite sua senha" />
-
-         </div>
+         </form>
 
          <div className="botao">
             <button className="entrar" type="submit"><Link to="/login">Cadastrar</Link></button>

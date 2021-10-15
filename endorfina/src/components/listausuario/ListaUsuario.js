@@ -29,7 +29,7 @@ function ListaUsuario() {
 
    return(
       <div>
-          <h1>Lista de Usuários</h1>
+          <h3>Lista de Usuários</h3>
           <table>
               <thead>
                   <tr>
@@ -57,7 +57,7 @@ function ListaUsuario() {
 
                               <td>
                                   <Link title="Editar" to={`/editar/${usuario.codigo}`}>Editar</Link>
-                                  <span title="Excluir" onClick={handleDelete.bind(this, usuario.codigo)}>Excluir</span>
+                                  <Link title="Editar" to="/" title="Excluir" onClick={handleDelete.bind(this, usuario.codigo)}>Ecluir</Link>
                               </td>
                           </tr>
                       ))}
