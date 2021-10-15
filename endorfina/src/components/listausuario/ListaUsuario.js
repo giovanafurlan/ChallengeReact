@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function ListaUsuario() {
 
@@ -15,7 +16,15 @@ function ListaUsuario() {
         })
     },[])
 
-    const handle
+    const handleDelete= (codigo)=>{
+        fetch("/rest/usuario/"+codigo,{
+            method: "delete"
+        }).then(()=>{
+                window.location="/"
+        }).catch((error)=>{
+            console.log(error)
+        })
+    }
 
 
    return(
@@ -31,7 +40,7 @@ function ListaUsuario() {
                       <th>Estado</th>
                       <th>Cidade</th>
                       <th>Senha</th>
-                      <th>***</th>
+                      <th>Editar</th>
                   </tr>
               </thead>
               <tbody>
@@ -45,6 +54,11 @@ function ListaUsuario() {
                               <td>{usuario.estado}</td>
                               <td>{usuario.cidade}</td>
                               <td>{usuario.senha}</td>
+
+                              <td>
+                                  <Link title="Editar" to={`/editar/${usuario.codigo}`}>Editar</Link>
+                                  <span title="Excluir" onClick={handleDelete.bind(this, usuario.codigo)}>Excluir</span>
+                              </td>
                           </tr>
                       ))}
               </tbody>
