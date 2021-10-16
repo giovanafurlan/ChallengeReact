@@ -44,7 +44,7 @@ export const Container = styled.section`
 `
 
 export const Topo = styled.header`
-    background-color: #009fec;
+    background-color: #aae3ff;
     height: 5vh;
 
     ul{
@@ -98,6 +98,10 @@ export const Topo = styled.header`
     }
 
     li:hover, a:hover, .dropbtn:hover{
-        background-color: #a8e2ff
+        background-color: #00a9fb
+    }
+
+    .conf{
+        
     }
 `

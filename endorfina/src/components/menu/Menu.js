@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, Route } from 'react-router-dom'
 import { Switch } from 'react-router'
 import { Topo } from '../../styled'
+import { AiOutlineSetting } from "react-icons/ai";
 import Home from '../home/Home'
 import Ansiedade from '../ansiedade/Ansiedade'
 import Hobbies from '../hobbies/Hobbies'
@@ -29,7 +30,7 @@ export default function Menu() {
                   <a><Link to="/perfilpro">Profissional</Link></a>
                </div>
                </div>
-               <li className="cadastro"><Link to="/lista">Usuários</Link></li>
+               <li className="opcao"><Link to="/lista"><AiOutlineSetting className="conf"/>Gerenciar</Link></li>
             </ul>
 
          <Switch>

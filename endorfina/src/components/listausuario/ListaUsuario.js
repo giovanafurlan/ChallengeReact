@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+
+export const Lista = styled.div`
+`;
+
 
 function ListaUsuario() {
 
@@ -28,6 +33,7 @@ function ListaUsuario() {
 
 
    return(
+       <Lista>
       <div>
           <h3>Lista de Usuários</h3>
           <table>
@@ -36,7 +42,7 @@ function ListaUsuario() {
                       <th>Nome</th>
                       <th>Email</th>
                       <th>Telefone</th>
-                      <th>Data de Nascimento</th>
+                      <th>Dt Nascimento</th>
                       <th>Estado</th>
                       <th>Cidade</th>
                       <th>Senha</th>
@@ -57,7 +63,7 @@ function ListaUsuario() {
 
                               <td>
                                   <Link title="Editar" to={`/editar/${usuario.codigo}`}>Editar</Link>
-                                  <Link title="Editar" to="/" title="Excluir" onClick={handleDelete.bind(this, usuario.codigo)}>Ecluir</Link>
+                                  <Link title="Editar" to="/" title="Excluir" onClick={handleDelete.bind(this, usuario.codigo)}>Excluir</Link>
                               </td>
                           </tr>
                       ))}
@@ -69,6 +75,7 @@ function ListaUsuario() {
               </tfoot>
           </table>
       </div>
+      </Lista>
 )}
 
 export default ListaUsuario
