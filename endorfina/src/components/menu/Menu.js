@@ -46,7 +46,7 @@ export default function Menu() {
          </Switch>
          <Switch>
             <Route path="/lista" exact component={ListaUsuario}></Route>
-            <Route path="/inclui" component={FormUsuario}></Route>
+            <Route path="/incluir" component={FormUsuario}></Route>
             <Route path="/edita/:codigo" component={FormUsuario}></Route>
          </Switch>
       </Topo>

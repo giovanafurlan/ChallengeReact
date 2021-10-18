@@ -36,6 +36,7 @@ function ListaUsuario() {
        <Lista>
       <div>
           <h3>Lista de Usuários</h3>
+          <Link to="/incluir">Inserir usuário</Link>
           <table>
               <thead>
                   <tr>
