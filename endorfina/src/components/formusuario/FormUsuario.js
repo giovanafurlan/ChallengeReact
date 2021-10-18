@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
-function FormUsuario() {
+function FormUsuario(props) {
 
    let id= null
    
@@ -25,7 +25,7 @@ function FormUsuario() {
       metodo= "put"
    }
 
-   const handleChange= ()=> {
+   const handleChange= (e)=> {
       setNovo({...novo,[e.target.name]: e.target.value})
    }
 

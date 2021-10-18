@@ -13,6 +13,8 @@ import Perfil2 from '../perfil2/Perfil2'
 import PerfilPro from '../perfilpro/PerfilPro'
 import FormUsuario from '../formusuario/FormUsuario'
 import ListaUsuario from '../listausuario/ListaUsuario'
+import ListaHobby from '../../listahobby/ListaHobby';
+import FormHobby from '../formhobby/FormHobby';
 
 export default function Menu() {
    return(
@@ -45,9 +47,9 @@ export default function Menu() {
             <Route path="/perfilpro" component={PerfilPro}></Route>
          </Switch>
          <Switch>
-            <Route path="/lista" exact component={ListaUsuario}></Route>
-            <Route path="/incluir" component={FormUsuario}></Route>
-            <Route path="/edita/:codigo" component={FormUsuario}></Route>
+            <Route path="/lista" exact component={ListaHobby}></Route>
+            <Route path="/incluir" component={FormHobby}></Route>
+            <Route path="/edita/:codigo" component={FormHobby}></Route>
          </Switch>
       </Topo>
 )}
