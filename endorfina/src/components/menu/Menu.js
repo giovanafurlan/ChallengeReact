@@ -11,9 +11,7 @@ import Login from '../login/Login'
 import Perfil from '../perfil/Perfil'
 import Perfil2 from '../perfil2/Perfil2'
 import PerfilPro from '../perfilpro/PerfilPro'
-import FormUsuario from '../formusuario/FormUsuario'
-import ListaUsuario from '../listausuario/ListaUsuario'
-import ListaHobby from '../../listahobby/ListaHobby';
+import ListaHobby from '../listahobby/ListaHobby';
 import FormHobby from '../formhobby/FormHobby';
 
 export default function Menu() {
@@ -49,7 +47,7 @@ export default function Menu() {
          <Switch>
             <Route path="/lista" exact component={ListaHobby}></Route>
             <Route path="/incluir" component={FormHobby}></Route>
-            <Route path="/edita/:codigo" component={FormHobby}></Route>
+            <Route path="/editar/:codigo" component={FormHobby}></Route>
          </Switch>
       </Topo>
 )}

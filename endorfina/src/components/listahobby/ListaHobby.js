@@ -3,8 +3,19 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 
 export const Lista = styled.div`
-`;
+    text-align: center;
 
+    table{
+        border: solid 2px #0078b3;
+        align-items: center;
+        margin: auto;
+        padding: 10vh;
+    }
+
+    h3{
+        margin: 3vh;
+    }
+`
 
 function ListaHobby() {
 
@@ -31,12 +42,10 @@ function ListaHobby() {
         })
     }
 
-
    return(
        <Lista>
-      <div>
           <h3>Lista de Hobbies</h3>
-          <Link to="/incluir">Inserir hobby</Link>
+          <Link to="/incluir" className="inclui">Inserir hobby</Link>
           <table>
               <thead>
                   <tr>
@@ -46,12 +55,12 @@ function ListaHobby() {
               </thead>
               <tbody>
                   {
-                      hobbies.map((hobby)=> (
-                          <tr key={hobby.codigo}>
-                              <td>{hobby.nome}</td>
+                      hobbies.map((nome)=> (
+                          <tr key={nome.codigo}>
+                              <td>{nome.nome}</td>
                               <td>
-                                  <Link title="Editar" to={`/editar/${hobby.codigo}`}>Editar</Link>
-                                  <Link title="Editar" to="/" title="Excluir" onClick={handleDelete.bind(this, hobby.codigo)}>Excluir</Link>
+                                  <Link title="Editar" to={`/editar/${nome.codigo}`}>Editar</Link>
+                                  <Link title="Editar" to="/" title="Excluir" onClick={handleDelete.bind(this, nome.codigo)}>Excluir</Link>
                               </td>
                           </tr>
                       ))}
@@ -62,7 +71,6 @@ function ListaHobby() {
                     </tr>
               </tfoot>
           </table>
-      </div>
       </Lista>
 )}
 

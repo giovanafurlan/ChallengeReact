@@ -1,12 +1,59 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+export const Formulario = styled.div`
+   border: solid 2px #0078b3;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 80vw;
+   margin: 5vw 10vw 10vw 10vw;
+
+   h3{
+      margin: 3vh;
+   }
+
+   .botao{
+      display:flex;
+      justify-content: center;
+      margin: 3vw;
+   }
+
+   .cancela{
+      display:flex;
+      justify-content: center;
+   }
+
+   .btn {
+      width: 60px;
+      padding: 10px 0;
+      background: #0078b3;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 5px;
+      transition: 1s all;
+      cursor: pointer;
+      margin: 10px 0;
+   }
+
+   .btn:hover {
+      background: #00BFFF;
+   }
+
+   form{
+      padding: 5vw;
+   }
+`
 
 function FormHobby(props) {
 
    let id= null
    
    if(props.match.path.toLowerCase().includes('editar')){
-      id= props.match.params.id
+      id= props.match.params.codigo
    }
 
    const[novo, setNovo]= useState({
@@ -46,22 +93,20 @@ function FormHobby(props) {
    },[id])
 
    return(
-      <div>
-         <h2>Inserir</h2>
+      <Formulario>
+         <h3>Inserir</h3>
 
          <form className="formulario" onSubmit={handleSubmit}>
              <div>
-                <input type="text" required placeholder="Nome do hobby" value={novo.nome} onChange={handleChange}/>
+                Nome do Hobby: <input name="nome" type="text" placeholder="Nome do hobby" value={novo.nome} onChange={handleChange}/>
              </div>
 
             <div className="botao">
-               <button className="entrar" type="submit"><Link to="/login">Enviar</Link></button>
+               <button className="btn" type="submit">Enviar</button>
             </div>
 
-            <Link to="/">Cancelar</Link>
+            <Link to="/" className="cancela">Cancelar</Link>
          </form>
-
-         
-      </div>
+      </Formulario>
 )}
 export default FormHobby
