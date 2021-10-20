@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import user from '../../img/user1.png'
-import user6 from '../../img/user6.png'
+import user5 from '../../img/user5.png'
 
-export const Sexto = styled.div`
+export const Setimo = styled.div`
   .usuario,.conexao{
       display: inline-block;
   }
@@ -33,9 +33,9 @@ export const Sexto = styled.div`
    }
 `
 
-export default function Perfil2() {
+export default function Perfil3() {
    return(
-      <Sexto>
+      <Setimo>
           <div className="usuario">
                <figure>
                     <img src={user} alt="Foto de perfil do usuário" className="user1"/>
@@ -46,13 +46,13 @@ export default function Perfil2() {
              <div className="conexao">
                <figure>
                   <h4>Profissional</h4>
-                  <img src={user6} alt="Foto de perfil do profissional" className="user"/>
-                  <figcaption>Alexandre</figcaption>
+                  <img src={user5} alt="Foto de perfil do profissional" className="user"/>
+                  <figcaption>Cordeiro</figcaption>
                </figure>
             </div>
             <div>
-               <h3>Hobbie: Violão</h3>
-               <iframe width="560" height="315" className="video" src="https://www.youtube.com/embed/jt9oRHFpZfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               <h3>Hobbie: Culinária</h3>
+               <iframe width="560" height="315" className="video" src="https://www.youtube.com/embed/SeDXen3LqrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-      </Sexto>
+      </Setimo>
 )}

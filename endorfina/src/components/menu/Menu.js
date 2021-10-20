@@ -12,10 +12,13 @@ import Perfil from '../perfil/Perfil'
 import Perfil2 from '../perfil2/Perfil2'
 import ListaHobby from '../listahobby/ListaHobby';
 import FormHobby from '../formhobby/FormHobby';
+import Perfil3 from '../perfil3/Perfil3';
+import Perfil4 from '../perfil4/Perfil4';
 
 export default function Menu() {
    return(
       <Topo>
+         <nav>
             <ul>
                <li className="opcao"><Link to="/home">Home</Link></li>
                <li className="opcao"><Link to="/ansiedade">Ansiedade</Link></li>
@@ -30,7 +33,8 @@ export default function Menu() {
                </div>
                <li className="opcao"><Link to="/lista"><AiOutlineSetting className="conf"/>Gerenciar</Link></li>
             </ul>
-
+         </nav>
+            
          <Switch>
             <Route path="/" exact component={Home}/>
             <Route path="/home" component={Home}></Route>
@@ -40,6 +44,8 @@ export default function Menu() {
             <Route path="/cadastro" component={Cadastro}></Route>
             <Route path="/perfil" component={Perfil}></Route>
             <Route path="/perfil2" component={Perfil2}></Route>
+            <Route path="/perfil3" component={Perfil3}></Route>
+            <Route path="/perfil4" component={Perfil4}></Route>
             <Route path="/lista" exact component={ListaHobby}></Route>
             <Route path="/incluir" component={FormHobby}></Route>
             <Route path="/editar/:codigo" component={FormHobby}></Route>

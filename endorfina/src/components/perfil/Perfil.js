@@ -78,11 +78,11 @@ export default function Perfil() {
                   <img src={musica} alt="" className="hobby"/>
                </figure>
                <figure>
-                  <figcaption className="hb">Culinária</figcaption>
+                  <figcaption className="hb"><Link to="/perfil3">Culinária</Link></figcaption>
                   <img src={culinaria} alt="" className="hobby"/>
                </figure>
                <figure>
-                  <figcaption className="hb">Meditação</figcaption>
+                  <figcaption className="hb"><Link to="/perfil4">Meditação</Link></figcaption>
                   <img src={meditacao} alt="" className="hobby"/>
                </figure>
             </div>

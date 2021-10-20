@@ -105,3 +105,20 @@ export const Topo = styled.header`
         
     }
 `
+
+export const Baixo = styled.footer`
+    background-color: #aae3ff;
+    font-size: 1rem;
+    color: #39017e;
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    p{
+        padding: 0;
+        margin: 0;
+    }
+`
