@@ -75,19 +75,19 @@ export default function Home() {
                <figure>
                   <img src= {user1}/>
                   <figcaption className="nome">Maria</figcaption>
-                  <figcaption>"A plataforma é incrível, me ajudou demais a me distrair das crises de ansiedade, e também descobrir um dom que tenho na pintura"</figcaption>
+                  <figcaption>"A plataforma é incrível, me ajudou demais a me distrair das crises de ansiedade, e também descobrir um dom que tenho na pintura, e na dança, não vivo mais sem"</figcaption>
                </figure>
 
                <figure>
                   <img src= {user2}/>
                   <figcaption className="nome">Lara</figcaption>
-                  <figcaption>"A plataforma é incrível, me ajudou demais a me distrair das crises de ansiedade, e também descobrir um dom que tenho na pintura"</figcaption>
+                  <figcaption>"Com o agravamento da Covid-19 no mundo, me encontrei presa dentro de casa, agoniada, estressada, ansiosa, ao descobrir a plataforma, descobri uma válvula de escape de tudo isso"</figcaption>
                </figure>
 
                <figure>
                   <img src= {user3}/>
                   <figcaption className="nome">Paulo</figcaption>
-                  <figcaption>"A plataforma é incrível, me ajudou demais a me distrair das crises de ansiedade, e também descobrir um dom que tenho na pintura"</figcaption>
+                  <figcaption>"Como descrever a plaforma Endorfina, e como mudou minha vida, agora eu consigo fazer coisas que eu amo, conhecer pessoas novas, de forma leve e educativa"</figcaption>
                </figure>
             </div>
       </Corpo>
