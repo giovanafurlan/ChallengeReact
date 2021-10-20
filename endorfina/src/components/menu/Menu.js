@@ -10,7 +10,6 @@ import Cadastro from '../cadastro/Cadastro'
 import Login from '../login/Login'
 import Perfil from '../perfil/Perfil'
 import Perfil2 from '../perfil2/Perfil2'
-import PerfilPro from '../perfilpro/PerfilPro'
 import ListaHobby from '../listahobby/ListaHobby';
 import FormHobby from '../formhobby/FormHobby';
 
@@ -24,10 +23,9 @@ export default function Menu() {
                <li className="cadastro"><Link to="/login">Login</Link></li>
                <li className="cadastro"><Link to="/cadastro">Cadastro</Link></li>
                <div class="dropdown">
-               <button class="dropbtn">Perfis</button>
+               <button class="dropbtn">Perfil</button>
                <div class="dropdown-content">
                   <a><Link to="/perfil">Usuário</Link></a>
-                  <a><Link to="/perfilpro">Profissional</Link></a>
                </div>
                </div>
                <li className="opcao"><Link to="/lista"><AiOutlineSetting className="conf"/>Gerenciar</Link></li>
@@ -42,9 +40,6 @@ export default function Menu() {
             <Route path="/cadastro" component={Cadastro}></Route>
             <Route path="/perfil" component={Perfil}></Route>
             <Route path="/perfil2" component={Perfil2}></Route>
-            <Route path="/perfilpro" component={PerfilPro}></Route>
-         </Switch>
-         <Switch>
             <Route path="/lista" exact component={ListaHobby}></Route>
             <Route path="/incluir" component={FormHobby}></Route>
             <Route path="/editar/:codigo" component={FormHobby}></Route>
