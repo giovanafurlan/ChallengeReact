@@ -54,8 +54,7 @@ function ListaHobby() {
                   </tr>
               </thead>
               <tbody>
-                  {
-                      hobbies.map((nome)=> (
+                  {hobbies.map((nome)=> (
                           <tr key={nome.codigo}>
                               <td>{nome.nome}</td>
                               <td>

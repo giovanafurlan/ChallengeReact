@@ -59,6 +59,19 @@ export const Corpo = styled.section`
     }
 `
 
+
+  window.watsonAssistantChatOptions = {
+      integrationID: "3462f50c-3795-4df1-ac04-aa95237b2933", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "5bb08391-35fb-4f43-a780-65119974eb1c", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+  
 export default function Home() {
    return(
       <Corpo>
